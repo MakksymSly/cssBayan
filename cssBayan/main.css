@@ -1,0 +1,35 @@
+html{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: #F5F5EB;
+}
+img{
+    height: auto;
+    max-width: 50%;   
+}
+header{
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 3%;
+}
+.container{
+    color: rgba(75, 75, 250, 0.963);
+    padding-top: 10%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.container:hover{
+    cursor: pointer;
+    color: #000;
+}
+.tab{
+    padding: 3% 0;
+    border-top: 0.1rem solid rgba(143, 158, 172, 0.866);
+}
+.tab-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
