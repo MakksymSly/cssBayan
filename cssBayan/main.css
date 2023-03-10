@@ -18,7 +18,7 @@ header{
     padding-bottom: 3%;
 }
 input{
-    opacity: 1;
+    opacity: 0;
 }
 .container{
     color: rgba(75, 75, 250, 0.963);
@@ -51,6 +51,7 @@ align-items: center;
 transition: 0.1s ease;
 opacity: 0;
 cursor: pointer;
+transform: rotate(45deg);
 }
 .tab-content{
 display: flex;
@@ -79,13 +80,24 @@ height: 25rem;
 #tab1:checked + label .tab1 {
    height: 25rem;
 }
+#tab1:checked + label .tab1 .tab-content-header-title-cross {
+    transform: rotate(0deg);
+ }
 #tab2:checked + label .tab2 {
     height: 25rem;
 }
-
+#tab2:checked + label .tab2 .tab-content-header-title-cross {
+    transform: rotate(0deg);
+ }
 #tab3:checked + label .tab3 {
     height: 25rem;
 }
+#tab3:checked + label .tab3 .tab-content-header-title-cross {
+    transform: rotate(0deg);
+ }
 #tab4:checked + label .tab4 {
     height: 25rem;
+}
+#tab4:checked + label .tab4 .tab-content-header-title-cross {
+    transform: rotate(0deg);
 }
