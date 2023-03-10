@@ -8,12 +8,17 @@ html{
 img{
     height: auto;
     max-width: 50%;   
+    transform: scale(0.80);
+    transition: 0.6s ease;
 }
 header{
     color: #000;
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 3%;
+}
+input{
+    opacity: 1;
 }
 .container{
     color: rgba(75, 75, 250, 0.963);
@@ -25,11 +30,62 @@ header{
     cursor: pointer;
     color: #000;
 }
-.tab{
-    padding: 3% 0;
-    border-top: 0.1rem solid rgba(143, 158, 172, 0.866);
+.container:hover .tab-content-header-title-cross{
+opacity: 1;
 }
-.tab-title{
-    font-weight: 700;
-    font-size: 1.5rem;
+.tab{
+margin-top: 3%;
+border-top: 0.1rem solid rgba(143, 158, 172, 0.866);
+}
+.tab-content-header{
+cursor: pointer;
+width: 100%;
+font-weight: 700;
+font-size: 1.5rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.tab-content-header-title-cross{
+transition: 0.1s ease;
+opacity: 0;
+cursor: pointer;
+}
+.tab-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 4rem;
+overflow: hidden;
+transition: 0.6s ease;
+}
+.tab-entire_label:active .tab-content {
+    color: rgba(75, 75, 250, 0.963);
+    filter: grayscale(70%);
+}
+.tab-content:hover .tab-content-image{
+    transform: scale(1);
+}
+
+.tab-content:hover{
+height: 25rem;
+}
+
+.active{
+    height: 25rem;
+}
+
+#tab1:checked + label .tab1 {
+   height: 25rem;
+}
+#tab2:checked + label .tab2 {
+    height: 25rem;
+}
+
+#tab3:checked + label .tab3 {
+    height: 25rem;
+}
+#tab4:checked + label .tab4 {
+    height: 25rem;
 }
